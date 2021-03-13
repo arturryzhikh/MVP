@@ -10,19 +10,16 @@ import UIKit
 class ExampleController: UIViewController {
     
     
-    @IBOutlet weak var greetingLabel: UILabel!
-    
+    @IBOutlet weak var tableView: UITableView!
     var presenter: PresenterProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.delegate = self
+        tableView.dataSource = self
     }
-    @IBAction func didTapAction(_ sender: Any) {
-        
-        self.presenter.showGreeting()
-       
-    }
+  
   
     
 
@@ -30,7 +27,26 @@ class ExampleController: UIViewController {
 
 extension ExampleController: ViewProtocol {
     func setGreeting(greeting: String) {
-        greetingLabel.text = greetingLabel.text!.isEmpty ? greeting : ""
+       
         
     }
+}
+
+extension ExampleController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
+        cell.textLabel?.text = "Test"
+        return cell
+    }
+    
+    
+}
+
+extension ExampleController: UITableViewDelegate {
+    
 }
