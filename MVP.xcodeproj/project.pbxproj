@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		3402A1BD25FCF66C00371849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402A1BC25FCF66C00371849 /* AppDelegate.swift */; };
 		3402A1BF25FCF66C00371849 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402A1BE25FCF66C00371849 /* SceneDelegate.swift */; };
-		3402A1C125FCF66C00371849 /* CommentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402A1C025FCF66C00371849 /* CommentsController.swift */; };
+		3402A1C125FCF66C00371849 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402A1C025FCF66C00371849 /* CommentsViewController.swift */; };
 		3402A1C625FCF66D00371849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3402A1C525FCF66D00371849 /* Assets.xcassets */; };
 		3402A1C925FCF66D00371849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3402A1C725FCF66D00371849 /* LaunchScreen.storyboard */; };
 		3402A1D225FCF68600371849 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402A1D125FCF68600371849 /* Comment.swift */; };
 		3402A1D525FCF6F900371849 /* CommentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402A1D425FCF6F900371849 /* CommentsPresenter.swift */; };
 		34D6A0E525FD180C0090C56E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6A0E425FD180C0090C56E /* NetworkService.swift */; };
-		34EB15FA25FCFCA5009DEE5D /* CommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EB15F925FCFCA5009DEE5D /* CommentView.xib */; };
+		34D6A0EC25FD27DE0090C56E /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6A0EB25FD27DE0090C56E /* DetailPresenter.swift */; };
+		34D6A0F325FD2A4B0090C56E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6A0F125FD2A4B0090C56E /* DetailViewController.swift */; };
+		34D6A0F425FD2A4B0090C56E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D6A0F225FD2A4B0090C56E /* DetailViewController.xib */; };
+		34EB15FA25FCFCA5009DEE5D /* CommentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EB15F925FCFCA5009DEE5D /* CommentsViewController.xib */; };
 		34EB160225FD0860009DEE5D /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EB160125FD0860009DEE5D /* ModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,14 +26,17 @@
 		3402A1B925FCF66C00371849 /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3402A1BC25FCF66C00371849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3402A1BE25FCF66C00371849 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3402A1C025FCF66C00371849 /* CommentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsController.swift; sourceTree = "<group>"; };
+		3402A1C025FCF66C00371849 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		3402A1C525FCF66D00371849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3402A1C825FCF66D00371849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3402A1CA25FCF66D00371849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3402A1D125FCF68600371849 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		3402A1D425FCF6F900371849 /* CommentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsPresenter.swift; sourceTree = "<group>"; };
 		34D6A0E425FD180C0090C56E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		34EB15F925FCFCA5009DEE5D /* CommentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentView.xib; sourceTree = "<group>"; };
+		34D6A0EB25FD27DE0090C56E /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		34D6A0F125FD2A4B0090C56E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		34D6A0F225FD2A4B0090C56E /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		34EB15F925FCFCA5009DEE5D /* CommentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsViewController.xib; sourceTree = "<group>"; };
 		34EB160125FD0860009DEE5D /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +74,8 @@
 				34D6A0E325FD17FD0090C56E /* Sevices */,
 				3402A1BC25FCF66C00371849 /* AppDelegate.swift */,
 				3402A1BE25FCF66C00371849 /* SceneDelegate.swift */,
+				34EB160025FD084A009DEE5D /* Builder */,
+				34D6A0EA25FD22D00090C56E /* DetailModule */,
 				34EB15F825FCFC67009DEE5D /* Comments */,
 				3402A1C525FCF66D00371849 /* Assets.xcassets */,
 				3402A1C725FCF66D00371849 /* LaunchScreen.storyboard */,
@@ -91,10 +99,43 @@
 			name = Sevices;
 			sourceTree = "<group>";
 		};
+		34D6A0EA25FD22D00090C56E /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				34D6A0F025FD2A300090C56E /* Model */,
+				34D6A0EF25FD2A250090C56E /* View */,
+				34D6A0EE25FD29FE0090C56E /* Presenter */,
+			);
+			name = DetailModule;
+			sourceTree = "<group>";
+		};
+		34D6A0EE25FD29FE0090C56E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				34D6A0EB25FD27DE0090C56E /* DetailPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		34D6A0EF25FD2A250090C56E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34D6A0F125FD2A4B0090C56E /* DetailViewController.swift */,
+				34D6A0F225FD2A4B0090C56E /* DetailViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		34D6A0F025FD2A300090C56E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		34EB15F825FCFC67009DEE5D /* Comments */ = {
 			isa = PBXGroup;
 			children = (
-				34EB160025FD084A009DEE5D /* Builder */,
 				34EB15FD25FD0820009DEE5D /* View */,
 				34EB15FE25FD0836009DEE5D /* Presenter */,
 				34EB15FF25FD0841009DEE5D /* Model */,
@@ -105,8 +146,8 @@
 		34EB15FD25FD0820009DEE5D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3402A1C025FCF66C00371849 /* CommentsController.swift */,
-				34EB15F925FCFCA5009DEE5D /* CommentView.xib */,
+				3402A1C025FCF66C00371849 /* CommentsViewController.swift */,
+				34EB15F925FCFCA5009DEE5D /* CommentsViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -192,9 +233,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34EB15FA25FCFCA5009DEE5D /* CommentView.xib in Resources */,
+				34EB15FA25FCFCA5009DEE5D /* CommentsViewController.xib in Resources */,
 				3402A1C925FCF66D00371849 /* LaunchScreen.storyboard in Resources */,
 				3402A1C625FCF66D00371849 /* Assets.xcassets in Resources */,
+				34D6A0F425FD2A4B0090C56E /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,9 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D6A0F325FD2A4B0090C56E /* DetailViewController.swift in Sources */,
 				3402A1D525FCF6F900371849 /* CommentsPresenter.swift in Sources */,
-				3402A1C125FCF66C00371849 /* CommentsController.swift in Sources */,
+				3402A1C125FCF66C00371849 /* CommentsViewController.swift in Sources */,
 				3402A1BD25FCF66C00371849 /* AppDelegate.swift in Sources */,
+				34D6A0EC25FD27DE0090C56E /* DetailPresenter.swift in Sources */,
 				34D6A0E525FD180C0090C56E /* NetworkService.swift in Sources */,
 				3402A1D225FCF68600371849 /* Comment.swift in Sources */,
 				3402A1BF25FCF66C00371849 /* SceneDelegate.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CommentsController: UIViewController {
+class CommentsViewController: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -25,7 +25,7 @@ class CommentsController: UIViewController {
 
 }
 
-extension CommentsController: ViewProtocol {
+extension CommentsViewController: ViewProtocol {
     
     func success() {
         tableView.reloadData()
@@ -40,7 +40,7 @@ extension CommentsController: ViewProtocol {
     
 }
 
-extension CommentsController: UITableViewDataSource {
+extension CommentsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         presenter.comments?.count ?? 0
@@ -59,6 +59,10 @@ extension CommentsController: UITableViewDataSource {
     
 }
 
-extension CommentsController: UITableViewDelegate {
-    
+extension CommentsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let comment = presenter.comments?[indexPath.row]
+        let detailVC = ModuleBuilder.createDetailModule(with: comment)
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
