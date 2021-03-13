@@ -26,21 +26,33 @@ class ExampleController: UIViewController {
 }
 
 extension ExampleController: ViewProtocol {
-    func setGreeting(greeting: String) {
-       
+    
+    func success() {
+        tableView.reloadData()
+    }
+    
+    func failure(error: Error?) {
+        let alert = UIAlertController(title: "Error occured while fetching data", message: "\(String(describing: error?.localizedDescription))", preferredStyle: UIAlertController.Style.alert)
+        self.present(alert, animated: true, completion: nil)
         
     }
+    
+    
 }
 
 extension ExampleController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        presenter.comments?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
-        cell.textLabel?.text = "Test"
+        cell.textLabel?.numberOfLines = 0
+        if let comment = presenter.comments?[indexPath.row] {
+            cell.textLabel?.text = " Id: \(comment.id) \n postId: \(comment.postId) \n Name: \(comment.name) \n Email: \(comment.email) \nComment: \(comment.body)"
+        }
+        
         return cell
     }
     

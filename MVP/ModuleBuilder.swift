@@ -16,10 +16,9 @@ protocol Builder {
 class ModuleBuilder: Builder {
     
     static func createExampleModule() -> UIViewController {
-        let model = Comment(firstName: "FirstName", lastName: "LastName")
+       
         let vc = ExampleController(nibName: "ExampleView",bundle: .main)
-        let presenter = ExamplePresenter(view: vc, person: model)
-        vc.presenter = presenter
+        vc.presenter = ExamplePresenter(view: vc, networkService: NetworkService())
         return vc
     }
     

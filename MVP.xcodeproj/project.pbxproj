@@ -14,6 +14,7 @@
 		3402A1C925FCF66D00371849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3402A1C725FCF66D00371849 /* LaunchScreen.storyboard */; };
 		3402A1D225FCF68600371849 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402A1D125FCF68600371849 /* Comment.swift */; };
 		3402A1D525FCF6F900371849 /* ExamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402A1D425FCF6F900371849 /* ExamplePresenter.swift */; };
+		34D6A0E525FD180C0090C56E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6A0E425FD180C0090C56E /* NetworkService.swift */; };
 		34EB15FA25FCFCA5009DEE5D /* ExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EB15F925FCFCA5009DEE5D /* ExampleView.xib */; };
 		34EB160225FD0860009DEE5D /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EB160125FD0860009DEE5D /* ModuleBuilder.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		3402A1CA25FCF66D00371849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3402A1D125FCF68600371849 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		3402A1D425FCF6F900371849 /* ExamplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePresenter.swift; sourceTree = "<group>"; };
+		34D6A0E425FD180C0090C56E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		34EB15F925FCFCA5009DEE5D /* ExampleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleView.xib; sourceTree = "<group>"; };
 		34EB160125FD0860009DEE5D /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 		3402A1BB25FCF66C00371849 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
+				34D6A0E325FD17FD0090C56E /* Sevices */,
 				3402A1BC25FCF66C00371849 /* AppDelegate.swift */,
 				3402A1BE25FCF66C00371849 /* SceneDelegate.swift */,
 				34EB15F825FCFC67009DEE5D /* Example */,
@@ -78,6 +81,14 @@
 			children = (
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		34D6A0E325FD17FD0090C56E /* Sevices */ = {
+			isa = PBXGroup;
+			children = (
+				34D6A0E425FD180C0090C56E /* NetworkService.swift */,
+			);
+			name = Sevices;
 			sourceTree = "<group>";
 		};
 		34EB15F825FCFC67009DEE5D /* Example */ = {
@@ -197,6 +208,7 @@
 				3402A1D525FCF6F900371849 /* ExamplePresenter.swift in Sources */,
 				3402A1C125FCF66C00371849 /* ExampleController.swift in Sources */,
 				3402A1BD25FCF66C00371849 /* AppDelegate.swift in Sources */,
+				34D6A0E525FD180C0090C56E /* NetworkService.swift in Sources */,
 				3402A1D225FCF68600371849 /* Comment.swift in Sources */,
 				3402A1BF25FCF66C00371849 /* SceneDelegate.swift in Sources */,
 				34EB160225FD0860009DEE5D /* ModuleBuilder.swift in Sources */,
