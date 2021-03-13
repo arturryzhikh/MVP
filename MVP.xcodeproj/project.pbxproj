@@ -46,7 +46,7 @@
 		3402A1B025FCF66C00371849 = {
 			isa = PBXGroup;
 			children = (
-				34D6A0DA25FD0F550090C56E /* Tests */,
+				34D6A0DA25FD0F550090C56E /* MVPTests */,
 				3402A1BB25FCF66C00371849 /* MVP */,
 				3402A1BA25FCF66C00371849 /* Products */,
 			);
@@ -73,11 +73,11 @@
 			path = MVP;
 			sourceTree = "<group>";
 		};
-		34D6A0DA25FD0F550090C56E /* Tests */ = {
+		34D6A0DA25FD0F550090C56E /* MVPTests */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Tests;
+			name = MVPTests;
 			sourceTree = "<group>";
 		};
 		34EB15F825FCFC67009DEE5D /* Example */ = {
