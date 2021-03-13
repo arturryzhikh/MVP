@@ -13,7 +13,7 @@ protocol ViewProtocol: class {
 
 protocol PresenterProtocol: class {
     
-    init(view: ViewProtocol, person: Person)
+    init(view: ViewProtocol, person: Comment)
     func showGreeting()
     
 }
@@ -21,9 +21,9 @@ protocol PresenterProtocol: class {
 class ExamplePresenter: PresenterProtocol {
     
     let view: ViewProtocol
-    let person: Person
+    let person: Comment
     
-    required init(view: ViewProtocol, person: Person) {
+    required init(view: ViewProtocol, person: Comment) {
         self.view = view
         self.person = person
     }

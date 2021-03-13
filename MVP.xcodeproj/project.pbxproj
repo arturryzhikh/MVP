@@ -12,7 +12,7 @@
 		3402A1C125FCF66C00371849 /* ExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402A1C025FCF66C00371849 /* ExampleController.swift */; };
 		3402A1C625FCF66D00371849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3402A1C525FCF66D00371849 /* Assets.xcassets */; };
 		3402A1C925FCF66D00371849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3402A1C725FCF66D00371849 /* LaunchScreen.storyboard */; };
-		3402A1D225FCF68600371849 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402A1D125FCF68600371849 /* Person.swift */; };
+		3402A1D225FCF68600371849 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402A1D125FCF68600371849 /* Comment.swift */; };
 		3402A1D525FCF6F900371849 /* ExamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402A1D425FCF6F900371849 /* ExamplePresenter.swift */; };
 		34EB15FA25FCFCA5009DEE5D /* ExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EB15F925FCFCA5009DEE5D /* ExampleView.xib */; };
 		34EB160225FD0860009DEE5D /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EB160125FD0860009DEE5D /* ModuleBuilder.swift */; };
@@ -26,7 +26,7 @@
 		3402A1C525FCF66D00371849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3402A1C825FCF66D00371849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3402A1CA25FCF66D00371849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3402A1D125FCF68600371849 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3402A1D125FCF68600371849 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		3402A1D425FCF6F900371849 /* ExamplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePresenter.swift; sourceTree = "<group>"; };
 		34EB15F925FCFCA5009DEE5D /* ExampleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleView.xib; sourceTree = "<group>"; };
 		34EB160125FD0860009DEE5D /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		34EB15FF25FD0841009DEE5D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3402A1D125FCF68600371849 /* Person.swift */,
+				3402A1D125FCF68600371849 /* Comment.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 				3402A1D525FCF6F900371849 /* ExamplePresenter.swift in Sources */,
 				3402A1C125FCF66C00371849 /* ExampleController.swift in Sources */,
 				3402A1BD25FCF66C00371849 /* AppDelegate.swift in Sources */,
-				3402A1D225FCF68600371849 /* Person.swift in Sources */,
+				3402A1D225FCF68600371849 /* Comment.swift in Sources */,
 				3402A1BF25FCF66C00371849 /* SceneDelegate.swift in Sources */,
 				34EB160225FD0860009DEE5D /* ModuleBuilder.swift in Sources */,
 			);
