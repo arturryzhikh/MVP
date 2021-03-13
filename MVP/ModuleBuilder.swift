@@ -17,8 +17,8 @@ class ModuleBuilder: Builder {
     
     static func createExampleModule() -> UIViewController {
        
-        let vc = ExampleController(nibName: "ExampleView",bundle: .main)
-        vc.presenter = ExamplePresenter(view: vc, networkService: NetworkService())
+        let vc = CommentsController(nibName: "CommentView",bundle: .main)
+        vc.presenter = CommentsPresenter(view: vc, networkService: NetworkService())
         return vc
     }
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ExampleController: UIViewController {
+class CommentsController: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -25,7 +25,7 @@ class ExampleController: UIViewController {
 
 }
 
-extension ExampleController: ViewProtocol {
+extension CommentsController: ViewProtocol {
     
     func success() {
         tableView.reloadData()
@@ -40,7 +40,7 @@ extension ExampleController: ViewProtocol {
     
 }
 
-extension ExampleController: UITableViewDataSource {
+extension CommentsController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         presenter.comments?.count ?? 0
@@ -59,6 +59,6 @@ extension ExampleController: UITableViewDataSource {
     
 }
 
-extension ExampleController: UITableViewDelegate {
+extension CommentsController: UITableViewDelegate {
     
 }

@@ -21,7 +21,7 @@ protocol PresenterProtocol: class {
     
 }
 
-class ExamplePresenter: PresenterProtocol {
+class CommentsPresenter: PresenterProtocol {
     
     var comments: [Comment]?
     
